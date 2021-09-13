@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(51, 51, 51);
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.calculator {
+  box-shadow: 0 0 25px 0 rgba(177, 189, 245, 0.685);
+  border-radius: 0.2em;
+  overflow: hidden;
+}
+
+.calculator_display {
+  display: flex;
+  background-color: rgb(6, 0, 39);
+  width: 16rem;
+  height: 4rem;
+  justify-content: right;
+  text-align: center;
+}
+
+.calculator_display div {
+  color: white;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  padding-right: 10px;
+}
+
+.calculator_keys {
+  width: 16rem;
+  height: 18rem;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-areas:
+    "divide times minus plus "
+    "seven eight nine plus"
+    "four five six equal"
+    "one two three equal"
+    "zero decimal clear equal";
+}
+
+.calculator button {
+  background-color: rgb(195, 194, 196);
+  font-size: 18px;
+  border-style: none;
+  font-weight: 600;
+  border: 0.2px solid rgba(229, 255, 0, 0.164);
+  transition: 1;
+}
+
+.calculator button:hover {
+  background-color: rgb(177, 177, 177);
+  border-style: none;
+  border: 0.2px solid rgb(79, 0, 143);
+}
+
+.calculator button:active {
+  background-color: rgb(6, 0, 39);
+  border-style: none;
+  border: 1px solid rgba(229, 255, 0, 0.9);
+  color: rgb(229, 255, 0, 0.9);
+}
+
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.zero {
+  grid-area: zero;
+}
+.decimal {
+  grid-area: decimal;
+}
+.clear {
+  grid-area: clear;
+}
+.divide {
+  grid-area: divide;
+}
+.times {
+  grid-area: times;
+}
+.minus {
+  grid-area: minus;
+}
+.plus {
+  grid-area: plus;
+}
+.equal {
+  grid-area: equal;
+}
